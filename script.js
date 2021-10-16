@@ -1,6 +1,6 @@
-document.getElementById("weatherSubmit").addEventListener("click", function (event) {
+document.getElementById("dateSubmit").addEventListener("click", function (event) {
     event.preventDefault();
-    const value = document.getElementById("weatherInput").value;
+    const value = document.getElementById("dateInput").value;
     if (value === "")
         return;
     else {
@@ -53,9 +53,9 @@ https://api.nasa.gov/planetary/apod?api_key=y5pneC0smGlo2LueKD3szEc4gM6Qh0sgOlh9
 */
 
 
-document.getElementById("weatherSubmit").addEventListener("click", function (event) {
+document.getElementById("dateSubmit").addEventListener("click", function (event) {
     event.preventDefault();
-    const value = document.getElementById("weatherInput").value;
+    const value = document.getElementById("dateInput").value;
     if (value === "")
         return;
     else {
