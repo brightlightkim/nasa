@@ -9,10 +9,9 @@ document.getElementById("dateSubmit").addEventListener("click", function (event)
             .then(function (response) {
                 return response.json();
             }).then(function (json) {
-                let firstImage = json["title"];
-                firstImage += '<img src="http://openweathermap.org/img/w/' + json.weather[i].icon + '.png"/>';
+                let firstImage = json.list[0].title;
+                firstImage += '<img src=' + json.list[0].hdrul;
                 document.getElementById("main_picture").innerHTML = title;
-
             });
 
     }
