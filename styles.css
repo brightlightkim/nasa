@@ -48,10 +48,28 @@ h4{
     justify-content: center;
 }
 
-.nasa_picture{
+#main_picture{
     display: flex;
     justify-content: center;
 }
+
+#main_picture > img{
+    max-width: 1000px;
+}
+
+#nasa_picture{
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 3px;
+    place-items: center;
+}
+
+#nasa_picture > img{
+    max-width: 300px;
+}
+
 
 #question{
     font-size: 1.5em;
