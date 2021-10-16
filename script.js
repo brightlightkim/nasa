@@ -10,7 +10,7 @@ document.getElementById("dateSubmit").addEventListener("click", function (event)
                 return response.json();
             }).then(function (json) {
                 let firstImage = json.list[0].title;
-                firstImage += '<img src=' + json.list[0].hdrul;
+                firstImage += '<img src=' + json.list[0].hdrul + '/>';
                 document.getElementById("main_picture").innerHTML = title;
             });
 
