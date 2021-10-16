@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face { font-family: 'YanoljaYacheR'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/YanoljaYacheR.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+body{
+    align-items: center;
+    justify-content: center;
+    background-color: #fff7f7;
+    font-family: 'YanoljaYacheR';
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+
+.dropdown-item {
+  color: white;
+}
+h1 h2 h3 h4 h5 p {
+    margin: 10px;
+}
+
+.wrapper_text{
+    display: flex;
+    justify-content: center;
+}
+
+.editor{
+    width: 1000px;
+    padding: 30px;
+}
+
+h3{
+    color: #f0483c;
+    text-shadow: 5px 5px 5px wheat;
+}
+
+h4{
+    color: #f06f3c;
+    text-shadow: 5px 5px 5px wheat;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+#question{
+    font-size: 1.5em;
+    color: #f06f3c;
+    padding: 20px;
+}
+
+#weatherResults{
+    width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 3px;
+    place-items: center;
+}
+
+.weatherNode{
+    border-style: solid;
+    border-color: #f06f3c;
+    object-fit: fill;
+}
+
+#title{
+    margin: 20px;
+    font-size: 2em;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    border-color: #f06f3c;
+    border-width: 10px;
+    border-style: dashed;
+}
+
+#title1{
+    margin: 20px;
+    font-size: 2em;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    border-color: #f06f3c;
+    border-width: 10px;
+    border-style: dashed;
+}
+
+#upperPadding {
+    padding-top: 30px;
+}
+
+#lowerPadding {
+    padding-bottom: 70px;
+}
+
+@media only screen and (max-width:400px) {
+  #weatherResults{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+  }
+   
+}
+
+@media only screen and (min-width: 401px) and (max-width:600px) {
+  #weatherResults{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(14, 1fr);
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width:1000px) {
+  #weatherResults{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+  }
+}
+
+@media only screen and (min-width:1001px) {
+ 
+}
