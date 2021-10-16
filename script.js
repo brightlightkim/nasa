@@ -12,6 +12,8 @@ document.getElementById("dateSubmit").addEventListener("click", function (event)
             }).then(function (json) {
                 let firstImage = "";
                 firstImage += '<img src="' + json[0].hdurl + '"/>';
+                firstImage += '<h4>' + json[0].title + '</h4>';
+                firstImage += '<p>' + json[0].explanation + '</p>';
                 document.getElementById("main_picture").innerHTML = firstImage;
                 
                 let images = "";
