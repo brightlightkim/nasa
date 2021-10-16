@@ -14,7 +14,8 @@ document.getElementById("dateSubmit").addEventListener("click", function (event)
                 
                 let explanation = "";
                 explanation += '<h4>' + json.title + '</h4><br>';
-                explanation += '<p>' + json.explanation + '</p>';
+                explanation += '<p>' + json.explanation + '</p><br><br>';
+                explanation += '<h4>Other Random NASA Pictures:</hr>';
                 document.getElementById("main_picture_explanation").innerHTML = explanation;
             });
 
