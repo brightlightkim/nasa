@@ -5,7 +5,7 @@ document.getElementById("dateSubmit").addEventListener("click", function (event)
         return;
     else {
         //const url = "https://api.nasa.gov/planetary/apod?api_key=y5pneC0smGlo2LueKD3szEc4gM6Qh0sgOlh96wFx&count=1&date=" + value;
-        const url = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&count=7"
+        const url = "https://api.nasa.gov/planetary/apod?api_key=y5pneC0smGlo2LueKD3szEc4gM6Qh0sgOlh96wFx&count=7"
         fetch(url)
             .then(function (response) {
                 return response.json();
