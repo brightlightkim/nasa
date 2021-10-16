@@ -48,6 +48,8 @@ document.getElementById("weatherSubmit").addEventListener("click", function (eve
 /*
 NASA Website API Key
 y5pneC0smGlo2LueKD3szEc4gM6Qh0sgOlh96wFx
+Example:
+https://api.nasa.gov/planetary/apod?api_key=y5pneC0smGlo2LueKD3szEc4gM6Qh0sgOlh96wFx
 */
 
 
