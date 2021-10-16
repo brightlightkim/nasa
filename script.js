@@ -14,7 +14,7 @@ document.getElementById("dateSubmit").addEventListener("click", function (event)
                 document.getElementById("main_picture").innerHTML = firstImage;
                 
                 let explanation = "";
-                explanation += '<h4>' + json[0].title + '</h4>';
+                explanation += '<h4>' + json[0].title + '</h4><br>';
                 explanation += '<p>' + json[0].explanation + '</p>';
                 document.getElementById("main_picture_explanation").innerHTML = explanation;
 
