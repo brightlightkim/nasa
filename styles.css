@@ -57,6 +57,11 @@ h4{
     max-width: 1000px;
 }
 
+#main_picture_explanation{
+    padding: 20px;
+    border: 1px solid #000000;
+}
+
 #nasa_picture{
     width: 1200px;
     display: grid;
