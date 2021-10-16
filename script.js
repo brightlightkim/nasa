@@ -4,14 +4,21 @@ document.getElementById("dateSubmit").addEventListener("click", function (event)
     if (value === "")
         return;
     else {
-        const url = "https://api.nasa.gov/planetary/apod?api_key=y5pneC0smGlo2LueKD3szEc4gM6Qh0sgOlh96wFx&count=1&date=" + value;
+        //const url = "https://api.nasa.gov/planetary/apod?api_key=y5pneC0smGlo2LueKD3szEc4gM6Qh0sgOlh96wFx&count=1&date=" + value;
+        const url = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&count=5"
         fetch(url)
             .then(function (response) {
                 return response.json();
             }).then(function (json) {
-                let firstImage = json.list[0].title;
-                firstImage += '<img src=' + json.list[0].hdrul + '/>';
-                document.getElementById("main_picture").innerHTML = title;
+                let firstImage = '<h3>'+ json[0].title + '</h3>';
+                firstImage += '<img src="' + json[0].hdurl + '"/>';
+                document.getElementById("main_picture").innerHTML = firstImage;
+                
+                let images = "";
+                for (let i = 0; i < json.length; i++){
+                    images += '<img src="' + json[i].hdurl + '"/>';
+                }
+                document.getElementsById("nasa_picture").innerHTML = images;
             });
 
     }
